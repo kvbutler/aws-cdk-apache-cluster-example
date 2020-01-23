@@ -1,6 +1,6 @@
-# Welcome to your CDK TypeScript project!
+# CDK example code that deploys an Apache Web Server cluster in an Auto Scaling Group behind an Application ELB
 
-This is a blank project for TypeScript development with CDK.
+CDK commands and build instructions
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 

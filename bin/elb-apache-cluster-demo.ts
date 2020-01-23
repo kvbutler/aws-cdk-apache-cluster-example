@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+import 'source-map-support/register';
+import * as cdk from '@aws-cdk/core';
+import { ElbApacheClusterDemoStack } from '../lib/elb-apache-cluster-demo-stack';
+
+const app = new cdk.App();
+new ElbApacheClusterDemoStack(app, 'ElbApacheClusterDemoStack', {
+    env: {
+        account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT, 
+        region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION 
+    }
+});
